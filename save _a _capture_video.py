@@ -2,7 +2,7 @@ import cv2 as cv
 
 cap = cv.VideoCapture(0)
 FourCC = cv.VideoWriter_fourcc(*"XVID")
-result = cv.VideoWriter("output1.avi", FourCC, 20.0, (640, 480))
+result = cv.VideoWriter("output1.mp4", FourCC, 20.0, (640, 480))
 
 while cap.isOpened():
     ret, frame = cap.read()
